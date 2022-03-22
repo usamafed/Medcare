@@ -1,0 +1,48 @@
+.hero-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.hero-area .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #4285f4;
+}
+
+.left-sec h1 {
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  color: #4285f4;
+}
+
+.left-sec p {
+  font-size: 16px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.left-sec > div {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-area {
+    flex-direction: column;
+  }
+  .hero-area img {
+    order: -1;
+    width: 100%;
+  }
+  .left-sec h1 {
+    margin-top: 50px;
+  }
+}
